@@ -11,14 +11,15 @@ pnpm install
 pnpm dev
 ```
 
-Abra http://localhost:3000. Para produção:
+Abra http://localhost:3000. Para gerar a versão estática de produção:
 
 ```sh
 pnpm lint
 pnpm typecheck
 pnpm build
-pnpm start
 ```
+
+Os arquivos prontos para hospedagem são gerados em `out/`.
 
 Se `node`/`pnpm` não estiverem no PATH deste computador, o runtime disponibilizado pelo Codex foi usado com:
 
@@ -74,7 +75,7 @@ Copie `.env.example` para `.env.local` e preencha `NEXT_PUBLIC_SITE_URL` com a U
 
 Após confirmar o nome comercial, defina `nameConfirmed: true`; isso habilita JSON-LD LocalBusiness com os dados efetivamente informados. `ogImage` é opcional e deve apontar para uma imagem real aprovada para compartilhamento. O site não contém avaliações nem métricas inventadas.
 
-A entrega é local, no repositório solicitado. Para hospedagem, use um ambiente compatível com Next.js/Node e execute `pnpm build` + `pnpm start`; o servidor é necessário para otimização de imagens. Não houve publicação externa.
+O site usa a exportação estática do Next.js e pode ser hospedado diretamente no Cloudflare Pages. A URL pública deve ser informada em `NEXT_PUBLIC_SITE_URL` durante o build para habilitar canonicals, sitemap e indexação.
 
 ## Validação
 
