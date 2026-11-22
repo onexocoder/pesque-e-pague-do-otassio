@@ -1134,11 +1134,32 @@ details p {
   flex-direction: column;
   align-items: flex-start;
 }
+.structure-card.has-image {
+  padding: 0;
+}
+.structure-card .structure-card-media {
+  width: 100%;
+  height: 240px;
+  min-height: 240px;
+}
+.structure-card .structure-card-media img {
+  transition: transform 0.65s ease;
+}
+.structure-card:hover .structure-card-media img {
+  transform: scale(1.035);
+}
+.structure-card-content {
+  padding: 38px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .structure-card:nth-child(3n + 2) {
   background: var(--forest);
   color: var(--cream);
 }
-.structure-card > svg {
+.structure-card-content > svg {
   margin-bottom: 35px;
 }
 .structure-card .eyebrow {
@@ -1149,7 +1170,7 @@ details p {
   font-size: 42px;
   margin-bottom: 24px;
 }
-.structure-card > p:not(.eyebrow) {
+.structure-card-content > p:not(.eyebrow) {
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -1885,7 +1906,17 @@ details p {
     padding: 30px;
     min-height: 290px;
   }
-  .structure-card > svg {
+  .structure-card.has-image {
+    padding: 0;
+  }
+  .structure-card .structure-card-media {
+    height: 230px;
+    min-height: 230px;
+  }
+  .structure-card-content {
+    padding: 28px;
+  }
+  .structure-card-content > svg {
     margin-bottom: 25px;
   }
   .structure-card h2 {

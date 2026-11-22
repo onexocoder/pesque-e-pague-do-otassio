@@ -112,7 +112,7 @@ export default function Page() {
             <p className="eyebrow">INSPIRAÇÃO PARA O PASSEIO</p>
             <h2>Perto da água.</h2>
           </div>
-          <p>Galeria de referência · fotos reais em breve.</p>
+          <p>Fotos reais do Pesque e Pague do Otássio.</p>
         </div>
         <Gallery />
       </section>

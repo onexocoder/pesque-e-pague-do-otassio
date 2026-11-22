@@ -9,14 +9,18 @@ export const editorialMedia: {
   food?: EditorialMedia;
 } = {
   manifesto: {
-    src: "/media/trees-demo.jpg",
-    alt: "Imagem de referência: luz entre árvores, não retrata o pesqueiro.",
-    isDemo: true,
+    src: "/media/estacionamento.jpg",
+    alt: "Área de entrada e estacionamento do Pesque e Pague do Otássio.",
+    isDemo: false,
   },
   fishing: {
-    src: "/media/lake-demo.jpg",
-    alt: "Imagem de referência: paisagem de um lago, não retrata o estabelecimento.",
-    isDemo: true,
+    src: "/media/represa.jpg",
+    alt: "Represas preparadas para pesca no Pesque e Pague do Otássio.",
+    isDemo: false,
   },
-  // food: adicione src, alt e isDemo: false quando houver fotografia real autorizada.
+  food: {
+    src: "/media/espaco-restaurante.jpg",
+    alt: "Espaço aberto do restaurante do Pesque e Pague do Otássio.",
+    isDemo: false,
+  },
 };

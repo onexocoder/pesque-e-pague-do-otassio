@@ -3,6 +3,7 @@ import { PageIntro, VisitBlock } from "@/components/shared";
 import { experiences } from "@/content/site";
 import { Icon } from "@/components/icon";
 import { Gallery } from "@/components/gallery";
+import { Media } from "@/components/media";
 import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata(
   "Espaços e lazer",
@@ -26,28 +27,42 @@ export default function Page() {
       </nav>
       <section className="section structure-grid">
         {experiences.map((e) => (
-          <article id={e.id} className="structure-card" key={e.id}>
-            <Icon name={e.icon} />
-            <p className="eyebrow">{e.category}</p>
-            <h2>{e.name}</h2>
-            <p>{e.description}</p>
-            {["restaurante", "lanchonete", "bar", "sorvetes"].includes(
-              e.id,
-            ) && (
-              <Link className="text-link" href="/cardapio">
-                Ver cardápio
-              </Link>
+          <article
+            id={e.id}
+            className={`structure-card${e.image ? " has-image" : ""}`}
+            key={e.id}
+          >
+            {e.image && e.imageAlt && (
+              <Media
+                className="structure-card-media"
+                src={e.image}
+                alt={e.imageAlt}
+                sizes="(max-width: 767px) 100vw, (max-width: 1000px) 50vw, 33vw"
+              />
             )}
+            <div className="structure-card-content">
+              <Icon name={e.icon} />
+              <p className="eyebrow">{e.category}</p>
+              <h2>{e.name}</h2>
+              <p>{e.description}</p>
+              {["restaurante", "lanchonete", "bar", "sorvetes"].includes(
+                e.id,
+              ) && (
+                <Link className="text-link" href="/cardapio">
+                  Ver cardápio
+                </Link>
+              )}
+            </div>
           </article>
         ))}
       </section>
       <section className="section">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">ATMOSFERA DO PROJETO</p>
+            <p className="eyebrow">CONHEÇA O ESPAÇO</p>
             <h2>Um convite ao encontro.</h2>
           </div>
-          <p>Imagens de referência, não retratam o local.</p>
+          <p>Fotos reais do Pesque e Pague do Otássio.</p>
         </div>
         <Gallery />
       </section>

@@ -5,7 +5,16 @@ export const navigation = [
   { href: "/estrutura", label: "Estrutura" },
   { href: "/visite", label: "Como chegar" },
 ];
-export const experiences = [
+export interface Experience {
+  id: string;
+  name: string;
+  category: string;
+  description: string;
+  icon: string;
+  image?: string;
+  imageAlt?: string;
+}
+export const experiences: Experience[] = [
   {
     id: "churrasco",
     name: "Juntos, ao redor da brasa.",
@@ -13,6 +22,8 @@ export const experiences = [
     description:
       "Espaço com churrasqueira para reunir família e amigos. Condições de uso a confirmar.",
     icon: "fire",
+    image: "/media/espaco-churrasco.jpg",
+    imageAlt: "Espaço coberto com churrasqueira, pia e mesas.",
   },
   {
     id: "sinuca",
@@ -20,6 +31,8 @@ export const experiences = [
     category: "Mesa de sinuca",
     description: "A conversa continua entre uma jogada e outra.",
     icon: "pool",
+    image: "/media/mesa-sinuca.jpg",
+    imageAlt: "Mesa de sinuca na área coberta do pesqueiro.",
   },
   {
     id: "restaurante",
@@ -28,6 +41,8 @@ export const experiences = [
     description:
       "Uma pausa para compartilhar o dia. Consulte o cardápio assim que estiver disponível.",
     icon: "plate",
+    image: "/media/espaco-restaurante.jpg",
+    imageAlt: "Área aberta com mesas do restaurante do pesqueiro.",
   },
   {
     id: "lanchonete",
@@ -42,6 +57,8 @@ export const experiences = [
     category: "Bar",
     description: "Um espaço para encontrar e estar junto.",
     icon: "glass",
+    image: "/media/bar.jpg",
+    imageAlt: "Balcão do bar com bebidas e itens de conveniência.",
   },
   {
     id: "sorvetes",
@@ -50,6 +67,8 @@ export const experiences = [
     description:
       "Para completar o passeio. Sabores e opções serão publicados no cardápio.",
     icon: "ice",
+    image: "/media/sorveteria.jpg",
+    imageAlt: "Área da sorveteria com freezers.",
   },
   {
     id: "estacionamento",
@@ -58,6 +77,8 @@ export const experiences = [
     description:
       "O espaço conta com estacionamento. Condições de utilização a confirmar.",
     icon: "parking",
+    image: "/media/estacionamento.jpg",
+    imageAlt: "Entrada e estacionamento do pesqueiro.",
   },
 ];
 export const home = {

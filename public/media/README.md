@@ -1,6 +1,8 @@
 # Mídias do pesqueiro
 
-As três imagens `*-demo.jpg` são referências de natureza obtidas do Unsplash. **Não são fotos do estabelecimento nem de Nova Fátima.** Os avisos de demonstração aparecem no site. A mesa é uma composição CSS, identificada como ilustração.
+As imagens `represa.jpg`, `espaco-restaurante.jpg`, `espaco-churrasco.jpg`, `mesa-sinuca.jpg`, `bar.jpg`, `sorveteria.jpg` e `estacionamento.jpg` são fotografias reais do Pesque e Pague do Otássio, otimizadas para carregamento na web.
+
+As três imagens `*-demo.jpg` são referências antigas obtidas do Unsplash e não estão mais exibidas nas áreas públicas do site. Podem ser removidas quando não forem mais necessárias para histórico.
 
 Fontes das referências:
 

@@ -55,7 +55,7 @@ Telefones devem incluir país e DDD, apenas dígitos. WhatsApp e telefone só vi
 
 ### Fotos e vídeos
 
-Veja `public/media/README.md` para substituição e fontes. A foto de referência do lago não retrata Nova Fátima. Após colocar imagens próprias, atualize as flags de demonstração, os textos alternativos e as legendas. As fontes Cormorant Garamond e Manrope são distribuídas via Fontsource com suas licenças nos respectivos pacotes; não dependem de chamadas ao Google Fonts.
+Veja `public/media/README.md` para a organização das imagens. As fotos reais do estabelecimento estão otimizadas para uso na web. As fontes Cormorant Garamond e Manrope são distribuídas via Fontsource com suas licenças nos respectivos pacotes; não dependem de chamadas ao Google Fonts.
 
 ## Rotas e comportamento
 

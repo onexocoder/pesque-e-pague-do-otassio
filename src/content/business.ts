@@ -30,9 +30,9 @@ export const business: Business = {
   phone: "+55 (43) 99901-1564",
   whatsapp: "5543999011564",
   hours: [{ day: "Todos os dias", time: "10:00 – 22:00" }],
-  heroPoster: "/media/lake-demo.jpg",
-  heroAlt:
-    "Paisagem de referência: lago cercado por montanhas e vegetação. Não retrata o estabelecimento.",
-  heroIsDemo: true,
+  heroPoster: "/media/represa.jpg",
+  heroAlt: "Represas de pesca do Pesque e Pague do Otássio cercadas por vegetação.",
+  heroIsDemo: false,
+  ogImage: "/media/represa.jpg",
   // Preencha apenas dados confirmados. Telefones no formato 5543999999999.
 };

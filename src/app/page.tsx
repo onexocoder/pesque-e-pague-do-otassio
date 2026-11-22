@@ -204,11 +204,7 @@ export default function Home() {
               <em>Boas lembranças.</em>
             </h2>
           </div>
-          <p>
-            Referências de atmosfera.
-            <br />
-            As fotos reais do espaço chegam em breve.
-          </p>
+          <p>Um pouco do espaço que espera por você.</p>
         </div>
         <Gallery />
       </section>
