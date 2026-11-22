@@ -81,12 +81,17 @@ export function Menu() {
               {items.map((item) => (
                 <article className="menu-card" key={item.id}>
                   {item.image && (
-                    <Image
-                      src={item.image}
-                      alt={item.name}
-                      width={480}
-                      height={320}
-                    />
+                    <div className="menu-card-image">
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        width={480}
+                        height={320}
+                      />
+                      {item.imageIsIllustrative && (
+                        <span>Imagem ilustrativa</span>
+                      )}
+                    </div>
                   )}
                   <div>
                     <h2>{item.name}</h2>
