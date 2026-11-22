@@ -1,0 +1,13 @@
+:root {
+  --forest: #172e26;
+  --green: #355d48;
+  --cream: #eae5d6;
+  --gold: #b88e54;
+  --lake: #84a9ac;
+  --ink: #14231d;
+  --white: #f8f6ef;
+  --line: rgba(23, 46, 38, 0.2);
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Manrope", Arial, sans-serif;
+  --gutter: clamp(24px, 5.5vw, 100px);
+}
